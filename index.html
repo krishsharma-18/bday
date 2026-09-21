@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Brother ❤️</title>
+
+<style>
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #fff5fa;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 20% 20%, #ffffff 0%, transparent 25%),
+        radial-gradient(circle at 80% 80%, #ffd5e8 0%, transparent 30%),
+        linear-gradient(135deg, #ffe5f0, #e9ddff);
+}
+
+
+/* Decorative circles */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: rgba(255,255,255,0.35);
+    border-radius: 50%;
+    top: -180px;
+    left: -150px;
+    animation: floatCircle 6s ease-in-out infinite;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(255,255,255,0.25);
+    border-radius: 50%;
+    bottom: -180px;
+    right: -130px;
+    animation: floatCircle 7s ease-in-out infinite reverse;
+}
+
+@keyframes floatCircle {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(25px);
+    }
+}
+
+
+/* =========================
+   FLOATING BALLOONS
+========================= */
+
+.balloon {
+    position: absolute;
+    width: 65px;
+    height: 80px;
+    border-radius: 50% 50% 45% 45%;
+    opacity: 0.9;
+    animation: balloonFloat 5s ease-in-out infinite;
+}
+
+.balloon::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background: #777;
+    left: 50%;
+    top: 75px;
+}
+
+.balloon1 {
+    background: #ff75a8;
+    left: 7%;
+    top: 15%;
+}
+
+.balloon2 {
+    background: #9b7cff;
+    right: 8%;
+    top: 20%;
+    animation-delay: 1s;
+}
+
+.balloon3 {
+    background: #ffc857;
+    left: 15%;
+    bottom: 10%;
+    animation-delay: 2s;
+}
+
+.balloon4 {
+    background: #64d8cb;
+    right: 16%;
+    bottom: 12%;
+    animation-delay: 3s;
+}
+
+@keyframes balloonFloat {
+
+    0%,100% {
+        transform: translateY(0) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(4deg);
+    }
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+    width: 90%;
+    max-width: 850px;
+    padding: 30px;
+}
+
+.small-text {
+    color: #ff4f91;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+    animation: fadeDown 1s ease;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 85px);
+    line-height: 1.05;
+    color: #ff3f87;
+
+    text-shadow:
+        0 5px 0 #fff,
+        0 8px 20px rgba(255, 63, 135, 0.25);
+
+    animation: titleAppear 1.2s ease;
+}
+
+.hero h1 span {
+    color: #7454e8;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    color: #555;
+    margin: 25px auto;
+    max-width: 600px;
+    line-height: 1.7;
+
+    animation: fadeUp 1.3s ease;
+}
+
+
+/* =========================
+   HERO BUTTON
+========================= */
+
+.start-button {
+    border: none;
+    outline: none;
+
+    padding: 17px 35px;
+
+    border-radius: 50px;
+
+    background: linear-gradient(135deg, #ff4081, #9c5cff);
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px rgba(255, 64, 129, 0.3);
+
+    transition: 0.3s;
+
+    animation:
+        fadeUp 1.5s ease,
+        buttonPulse 2s infinite;
+}
+
+.start-button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow:
+        0 15px 35px rgba(255, 64, 129, 0.4);
+}
+
+@keyframes buttonPulse {
+
+    0%,100% {
+        box-shadow: 0 10px 25px rgba(255,64,129,0.3);
+    }
+
+    50% {
+        box-shadow: 0 10px 35px rgba(255,64,129,0.6);
+    }
+}
+
+
+/* =========================
+   SPARKLES
+========================= */
+
+.sparkle {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    animation: sparkleAnimation 2s infinite;
+}
+
+.s1 {
+    left: 30%;
+    top: 20%;
+}
+
+.s2 {
+    right: 28%;
+    top: 30%;
+    animation-delay: .5s;
+}
+
+.s3 {
+    left: 25%;
+    bottom: 25%;
+    animation-delay: 1s;
+}
+
+.s4 {
+    right: 25%;
+    bottom: 30%;
+    animation-delay: 1.5s;
+}
+
+@keyframes sparkleAnimation {
+
+    0%,100% {
+        opacity: .3;
+        transform: scale(.7) rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.4) rotate(180deg);
+    }
+}
+
+
+/* =========================
+   SURPRISE SECTION
+========================= */
+
+#surprise {
+    display: none;
+
+    min-height: 100vh;
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f6,
+            #f2edff
+        );
+
+    animation: sectionAppear 1s ease;
+}
+
+@keyframes sectionAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.section-title {
+    color: #ff4081;
+    font-size: clamp(30px, 5vw, 50px);
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+
+/* =========================
+   CAKE AREA
+========================= */
+
+.cake-area {
+    width: 100%;
+    max-width: 850px;
+
+    height: 350px;
+
+    margin: auto;
+
+    position: relative;
+}
+
+
+/* Cake plate */
+
+.plate {
+    position: absolute;
+
+    width: 330px;
+    height: 35px;
+
+    background: #ddd;
+
+    border-radius: 50%;
+
+    left: 50%;
+    bottom: 25px;
+
+    transform: translateX(-50%);
+
+    box-shadow: 0 8px 10px rgba(0,0,0,.15);
+}
+
+
+/* Cake */
+
+.cake {
+    position: absolute;
+
+    width: 280px;
+    height: 160px;
+
+    left: 50%;
+    bottom: 45px;
+
+    transform: translateX(-50%);
+
+    animation: cakeBounce 3s ease-in-out infinite;
+}
+
+@keyframes cakeBounce {
+
+    0%,100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-8px);
+    }
+}
+
+
+/* Cake body */
+
+.cake-body {
+    position: absolute;
+
+    width: 270px;
+    height: 115px;
+
+    bottom: 0;
+
+    background: linear-gradient(
+        #ff7bac,
+        #ff4f91
+    );
+
+    border-radius:
+        10px
+        10px
+        25px
+        25px;
+}
+
+
+/* Cake top */
+
+.cake-top {
+    position: absolute;
+
+    width: 280px;
+    height: 65px;
+
+    top: 5px;
+
+    background: #ffb4d0;
+
+    border-radius: 50%;
+
+    z-index: 3;
+}
+
+
+/* Cream */
+
+.cream {
+    position: absolute;
+
+    width: 275px;
+    height: 35px;
+
+    top: 35px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    z-index: 4;
+}
+
+
+/* Cake decoration */
+
+.dot {
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    background: #ffd54f;
+
+    border-radius: 50%;
+
+    z-index: 6;
+}
+
+.dot1 {
+    left: 45px;
+    bottom: 30px;
+}
+
+.dot2 {
+    left: 100px;
+    bottom: 50px;
+}
+
+.dot3 {
+    right: 50px;
+    bottom: 35px;
+}
+
+.dot4 {
+    right: 105px;
+    bottom: 65px;
+}
+
+
+/* =========================
+   CANDLES
+========================= */
+
+.candle {
+    position: absolute;
+
+    width: 16px;
+    height: 55px;
+
+    top: -35px;
+
+    background:
+        repeating-linear-gradient(
+            45deg,
+            #9c6cff 0px,
+            #9c6cff 8px,
+            white 8px,
+            white 16px
+        );
+
+    border-radius: 5px;
+
+    z-index: 8;
+}
+
+.candle1 {
+    left: 75px;
+}
+
+.candle2 {
+    left: 132px;
+}
+
+.candle3 {
+    right: 75px;
+}
+
+
+/* Flame */
+
+.flame {
+    position: absolute;
+
+    width: 18px;
+    height: 25px;
+
+    background: #ff9d00;
+
+    border-radius:
+        50%
+        50%
+        50%
+        0;
+
+    transform: rotate(-45deg);
+
+    top: -22px;
+    left: -1px;
+
+    animation: flame 0.5s infinite alternate;
+}
+
+@keyframes flame {
+
+    from {
+        transform: rotate(-45deg) scale(1);
+    }
+
+    to {
+        transform: rotate(-45deg) scale(1.2);
+    }
+}
+
+
+/* =========================
+   KNIFE
+========================= */
+
+.knife {
+    position: absolute;
+
+    right: 50px;
+    bottom: 120px;
+
+    font-size: 65px;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    transition:
+        right 1.2s ease,
+        bottom 1.2s ease,
+        transform 1.2s ease;
+
+    animation: knifeFloat 2s infinite ease-in-out;
+}
+
+.knife:hover {
+    transform: rotate(-10deg) scale(1.1);
+}
+
+@keyframes knifeFloat {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+
+/* Knife cutting */
+
+.knife.cutting {
+
+    right: calc(50% - 35px);
+
+    bottom: 130px;
+
+    transform:
+        rotate(-55deg)
+        scale(1.1);
+
+    animation: none;
+}
+
+
+/* =========================
+   CUT BUTTON
+========================= */
+
+.action-button {
+
+    border: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4081,
+            #8e5cff
+        );
+
+    color: white;
+
+    padding: 15px 30px;
+
+    border-radius: 50px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.15);
+}
+
+.action-button:hover {
+    transform: translateY(-3px) scale(1.03);
+}
+
+
+/* =========================
+   GIFT
+========================= */
+
+.gift {
+    display: none;
+
+    margin-top: 40px;
+
+    animation: giftAppear 1s ease;
+}
+
+@keyframes giftAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.gift-box {
+
+    width: 160px;
+    height: 150px;
+
+    margin: auto;
+
+    position: relative;
+}
+
+
+/* Box */
+
+.box {
+
+    position: absolute;
+
+    width: 160px;
+    height: 105px;
+
+    bottom: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff4081,
+            #ff6fa8
+        );
+
+    border-radius: 10px;
+}
+
+
+/* Golden ribbon */
+
+.ribbon-v {
+
+    position: absolute;
+
+    width: 25px;
+    height: 150px;
+
+    left: 67px;
+
+    background: #ffd700;
+
+    z-index: 4;
+}
+
+.ribbon-h {
+
+    position: absolute;
+
+    width: 160px;
+    height: 25px;
+
+    top: 45px;
+
+    background: #ffd700;
+
+    z-index: 5;
+}
+
+
+/* Gift lid */
+
+.lid {
+
+    position: absolute;
+
+    width: 175px;
+    height: 35px;
+
+    left: -7px;
+    top: 25px;
+
+    background: #ff5a96;
+
+    border-radius: 8px;
+
+    z-index: 8;
+
+    transition:
+        transform 1s ease;
+}
+
+
+/* Open */
+
+.gift.open .lid {
+
+    transform:
+        translateY(-110px)
+        rotate(-10deg);
+}
+
+
+/* Gift emoji */
+
+.gift-content {
+
+    position: absolute;
+
+    width: 100%;
+
+    top: -15px;
+
+    font-size: 45px;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message {
+
+    display: none;
+
+    max-width: 700px;
+
+    margin: 45px auto 0;
+
+    padding: 30px;
+
+    background: rgba(255,255,255,.8);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.1);
+
+    animation: messagePop 1s ease;
+}
+
+@keyframes messagePop {
+
+    from {
+        opacity: 0;
+        transform: scale(.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.message h2 {
+
+    font-size: 32px;
+
+    color: #ff4081;
+
+    margin-bottom: 15px;
+}
+
+.message p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #555;
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti {
+
+    position: fixed;
+
+    top: -30px;
+
+    z-index: 999;
+
+    font-size: 25px;
+
+    pointer-events: none;
+
+    animation:
+        confettiFall
+        4s linear forwards;
+}
+
+@keyframes confettiFall {
+
+    to {
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   HEARTS
+========================= */
+
+.heart {
+
+    position: fixed;
+
+    bottom: -30px;
+
+    font-size: 25px;
+
+    animation:
+        heartFloat
+        5s linear forwards;
+
+    pointer-events: none;
+
+    z-index: 2;
+}
+
+@keyframes heartFloat {
+
+    to {
+
+        transform:
+            translateY(-110vh)
+            translateX(100px);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 600px) {
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .balloon {
+        transform: scale(.7);
+    }
+
+    .cake {
+        transform: translateX(-50%) scale(.8);
+    }
+
+    .plate {
+        transform:
+            translateX(-50%)
+            scale(.8);
+    }
+
+    .knife {
+        right: 10px;
+        font-size: 50px;
+    }
+
+    .knife.cutting {
+        right: calc(50% - 25px);
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =================================
+     HERO / STARTING PAGE
+================================= -->
+
+<section class="hero" id="hero">
+
+    <!-- Balloons -->
+
+    <div class="balloon balloon1"></div>
+    <div class="balloon balloon2"></div>
+    <div class="balloon balloon3"></div>
+    <div class="balloon balloon4"></div>
+
+
+    <!-- Sparkles -->
+
+    <div class="sparkle s1">✨</div>
+    <div class="sparkle s2">⭐</div>
+    <div class="sparkle s3">✨</div>
+    <div class="sparkle s4">💫</div>
+
+
+    <!-- Hero content -->
+
+    <div class="hero-content">
+
+        <div class="small-text">
+            💌 A LITTLE SURPRISE FOR YOU
+        </div>
+
+        <h1>
+            Happy Birthday
+            <br>
+            <span>Brother! ❤️</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            Today is not just another day...
+            <br>
+            It's the day someone very special was born! 🎂
+            <br>
+            So I prepared a little surprise just for you. ✨
+        </p>
+
+
+        <button
+            class="start-button"
+            onclick="startSurprise()">
+
+            🎁 Open Your Surprise
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================
+     SURPRISE SECTION
+================================= -->
+
+<section id="surprise">
+
+    <h2 class="section-title">
+        🎂 Your Birthday Surprise 🎂
+    </h2>
+
+    <p class="section-subtitle">
+        First... let's cut the cake! ❤️
+    </p>
+
+
+    <!-- Cake area -->
+
+    <div class="cake-area">
+
+
+        <!-- Plate -->
+
+        <div class="plate"></div>
+
+
+        <!-- Cake -->
+
+        <div class="cake">
+
+            <div class="cake-top"></div>
+
+            <div class="cream"></div>
+
+            <div class="cake-body"></div>
+
+
+            <!-- Candles -->
+
+            <div class="candle candle1">
+
+                <div class="flame"></div>
+
+            </div>
+
+            <div class="candle candle2">
+
+                <div class="flame"></div>
+
+            </div>
+
+            <div class="candle candle3">
+
+                <div class="flame"></div>
+
+            </div>
+
+
+            <!-- Cake decoration -->
+
+            <div class="dot dot1"></div>
+            <div class="dot dot2"></div>
+            <div class="dot dot3"></div>
+            <div class="dot dot4"></div>
+
+        </div>
+
+
+        <!-- Knife -->
+
+        <div
+            class="knife"
+            id="knife">
+
+            🔪
+
+        </div>
+
+    </div>
+
+
+    <!-- Button -->
+
+    <button
+        class="action-button"
+        id="cutButton"
+        onclick="cutCake()">
+
+        🔪 Pick Up Knife & Cut Cake
+
+    </button>
+
+
+    <!-- =================================
+         GIFT
+    ================================= -->
+
+    <div
+        class="gift"
+        id="gift">
+
+        <div class="gift-box">
+
+            <div class="gift-content">
+                🎁
+            </div>
+
+            <div class="box"></div>
+
+            <div class="ribbon-v"></div>
+
+            <div class="ribbon-h"></div>
+
+            <div class="lid"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================
+         MESSAGE
+    ================================= -->
+
+    <div
+        class="message"
+        id="message">
+
+        <h2>
+            🎉 Surprise! 🎉
+        </h2>
+
+        <p>
+
+            ❤️ Happy Birthday to the most amazing brother! ❤️
+
+            <br><br>
+
+            May your life always be filled with
+            happiness, success, laughter and
+            beautiful memories.
+
+            <br><br>
+
+            Keep smiling, keep shining and
+            always be the wonderful person you are! ✨
+
+            <br><br>
+
+            🎂 Happy Birthday, Brother! 🎂
+
+        </p>
+
+        <br>
+
+        <h2>
+            🥳 Have an Amazing Day! 🥳
+        </h2>
+
+    </div>
+
+</section>
+
+
+
+<script>
+
+
+/* =================================
+   START SURPRISE
+================================= */
+
+function startSurprise() {
+
+    const hero =
+        document.getElementById("hero");
+
+    const surprise =
+        document.getElementById("surprise");
+
+
+    /*
+       Hide hero
+    */
+
+    hero.style.display = "none";
+
+
+    /*
+       Show surprise
+    */
+
+    surprise.style.display = "block";
+
+
+    /*
+       Move page to surprise
+    */
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+
+    /*
+       Start floating hearts
+    */
+
+    startHearts();
+}
+
+
+
+/* =================================
+   CUT CAKE
+================================= */
+
+function cutCake() {
+
+    const knife =
+        document.getElementById("knife");
+
+    const button =
+        document.getElementById("cutButton");
+
+
+    /*
+       Change button text
+    */
+
+    button.innerHTML =
+        "🔪 Cutting the cake...";
+
+
+    button.disabled = true;
+
+
+    /*
+       Move knife toward cake
+    */
+
+    knife.classList.add("cutting");
+
+
+    /*
+       After cutting
+    */
+
+    setTimeout(function() {
+
+
+        /*
+           Hide knife
+        */
+
+        knife.style.display = "none";
+
+
+        /*
+           Change button
+        */
+
+        button.style.display = "none";
+
+
+        /*
+           Show gift
+        */
+
+        const gift =
+            document.getElementById("gift");
+
+        gift.style.display = "block";
+
+
+        /*
+           Open gift after small delay
+        */
+
+        setTimeout(function() {
+
+            gift.classList.add("open");
+
+
+            /*
+               Show birthday message
+            */
+
+            setTimeout(function() {
+
+                const message =
+                    document.getElementById("message");
+
+                message.style.display = "block";
+
+
+                /*
+                   Celebration
+                */
+
+                createConfetti();
+
+                createHearts();
+
+            }, 1000);
+
+
+        }, 700);
+
+
+    }, 1800);
+
+}
+
+
+
+/* =================================
+   CONFETTI
+================================= */
+
+function createConfetti() {
+
+    const symbols = [
+
+        "🎉",
+        "🎊",
+        "✨",
+        "⭐",
+        "❤️",
+        "💙",
+        "💛",
+        "💚",
+        "🎈"
+
+    ];
+
+
+    for(let i = 0; i < 70; i++) {
+
+        const confetti =
+            document.createElement("div");
+
+
+        confetti.className =
+            "confetti";
+
+
+        confetti.innerHTML =
+            symbols[
+                Math.floor(
+                    Math.random() *
+                    symbols.length
+                )
+            ];
+
+
+        confetti.style.left =
+            Math.random() * 100 + "vw";
+
+
+        confetti.style.animationDuration =
+            (2 + Math.random() * 4) + "s";
+
+
+        confetti.style.fontSize =
+            (15 + Math.random() * 20) + "px";
+
+
+        document.body.appendChild(confetti);
+
+
+        setTimeout(function() {
+
+            confetti.remove();
+
+        }, 6000);
+
+    }
+
+}
+
+
+
+/* =================================
+   FLOATING HEARTS
+================================= */
+
+function createHearts() {
+
+    const hearts = [
+        "❤️",
+        "💖",
+        "💕",
+        "💗",
+        "💓"
+    ];
+
+
+    for(let i = 0; i < 25; i++) {
+
+        const heart =
+            document.createElement("div");
+
+
+        heart.className =
+            "heart";
+
+
+        heart.innerHTML =
+            hearts[
+                Math.floor(
+                    Math.random() *
+                    hearts.length
+                )
+            ];
+
+
+        heart.style.left =
+            Math.random() * 100 + "vw";
+
+
+        heart.style.animationDuration =
+            (3 + Math.random() * 4) + "s";
+
+
+        document.body.appendChild(heart);
+
+
+        setTimeout(function() {
+
+            heart.remove();
+
+        }, 7000);
+
+    }
+
+}
+
+
+
+/* =================================
+   CONTINUOUS SMALL HEARTS
+================================= */
+
+function startHearts() {
+
+    setInterval(function() {
+
+        const heart =
+            document.createElement("div");
+
+
+        heart.className =
+            "heart";
+
+
+        heart.innerHTML = "💕";
+
+
+        heart.style.left =
+            Math.random() * 100 + "vw";
+
+
+        heart.style.animationDuration =
+            (5 + Math.random() * 3) + "s";
+
+
+        document.body.appendChild(heart);
+
+
+        setTimeout(function() {
+
+            heart.remove();
+
+        }, 8000);
+
+
+    }, 1200);
+
+}
+
+</script>
+
+</body>
+</html>
