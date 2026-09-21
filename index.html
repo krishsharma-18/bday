@@ -77,7 +77,6 @@ body {
 }
 
 @keyframes floatCircle {
-
     0%,100% {
         transform: translateY(0);
     }
@@ -139,7 +138,6 @@ body {
 }
 
 @keyframes balloonFloat {
-
     0%,100% {
         transform: translateY(0) rotate(-3deg);
     }
@@ -162,13 +160,50 @@ body {
     padding: 30px;
 }
 
+
+/* =========================
+   BIRTHDAY IMAGE
+========================= */
+
+.birthday-image {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 7px solid white;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.18),
+        0 0 0 8px rgba(255,255,255,0.25);
+
+    margin-bottom: 22px;
+
+    animation: imageFloat 3s ease-in-out infinite;
+}
+
+@keyframes imageFloat {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
 .small-text {
     color: #ff4f91;
     font-size: 18px;
     letter-spacing: 3px;
     font-weight: bold;
     margin-bottom: 15px;
-
     animation: fadeDown 1s ease;
 }
 
@@ -232,12 +267,12 @@ body {
 
 .start-button:hover {
     transform: translateY(-5px) scale(1.05);
+
     box-shadow:
         0 15px 35px rgba(255, 64, 129, 0.4);
 }
 
 @keyframes buttonPulse {
-
     0%,100% {
         box-shadow: 0 10px 25px rgba(255,64,129,0.3);
     }
@@ -283,7 +318,6 @@ body {
 }
 
 @keyframes sparkleAnimation {
-
     0%,100% {
         opacity: .3;
         transform: scale(.7) rotate(0deg);
@@ -320,7 +354,6 @@ body {
 }
 
 @keyframes sectionAppear {
-
     from {
         opacity: 0;
         transform: translateY(30px);
@@ -331,7 +364,6 @@ body {
         transform: translateY(0);
     }
 }
-
 
 .section-title {
     color: #ff4081;
@@ -361,7 +393,7 @@ body {
 }
 
 
-/* Cake plate */
+/* Plate */
 
 .plate {
     position: absolute;
@@ -399,7 +431,6 @@ body {
 }
 
 @keyframes cakeBounce {
-
     0%,100% {
         transform: translateX(-50%) translateY(0);
     }
@@ -569,7 +600,6 @@ body {
 }
 
 @keyframes flame {
-
     from {
         transform: rotate(-45deg) scale(1);
     }
@@ -609,7 +639,6 @@ body {
 }
 
 @keyframes knifeFloat {
-
     0%,100% {
         transform: translateY(0);
     }
@@ -623,7 +652,6 @@ body {
 /* Knife cutting */
 
 .knife.cutting {
-
     right: calc(50% - 35px);
 
     bottom: 130px;
@@ -637,11 +665,10 @@ body {
 
 
 /* =========================
-   CUT BUTTON
+   BUTTON
 ========================= */
 
 .action-button {
-
     border: none;
 
     background:
@@ -687,7 +714,6 @@ body {
 }
 
 @keyframes giftAppear {
-
     from {
         opacity: 0;
         transform: scale(0);
@@ -700,7 +726,6 @@ body {
 }
 
 .gift-box {
-
     width: 160px;
     height: 150px;
 
@@ -713,7 +738,6 @@ body {
 /* Box */
 
 .box {
-
     position: absolute;
 
     width: 160px;
@@ -732,10 +756,9 @@ body {
 }
 
 
-/* Golden ribbon */
+/* Ribbon */
 
 .ribbon-v {
-
     position: absolute;
 
     width: 25px;
@@ -749,7 +772,6 @@ body {
 }
 
 .ribbon-h {
-
     position: absolute;
 
     width: 160px;
@@ -766,7 +788,6 @@ body {
 /* Gift lid */
 
 .lid {
-
     position: absolute;
 
     width: 175px;
@@ -789,7 +810,6 @@ body {
 /* Open */
 
 .gift.open .lid {
-
     transform:
         translateY(-110px)
         rotate(-10deg);
@@ -799,7 +819,6 @@ body {
 /* Gift emoji */
 
 .gift-content {
-
     position: absolute;
 
     width: 100%;
@@ -817,7 +836,6 @@ body {
 ========================= */
 
 .message {
-
     display: none;
 
     max-width: 700px;
@@ -837,7 +855,6 @@ body {
 }
 
 @keyframes messagePop {
-
     from {
         opacity: 0;
         transform: scale(.5);
@@ -850,7 +867,6 @@ body {
 }
 
 .message h2 {
-
     font-size: 32px;
 
     color: #ff4081;
@@ -859,7 +875,6 @@ body {
 }
 
 .message p {
-
     font-size: 18px;
 
     line-height: 1.8;
@@ -873,7 +888,6 @@ body {
 ========================= */
 
 .confetti {
-
     position: fixed;
 
     top: -30px;
@@ -890,9 +904,7 @@ body {
 }
 
 @keyframes confettiFall {
-
     to {
-
         transform:
             translateY(110vh)
             rotate(720deg);
@@ -907,7 +919,6 @@ body {
 ========================= */
 
 .heart {
-
     position: fixed;
 
     bottom: -30px;
@@ -924,14 +935,53 @@ body {
 }
 
 @keyframes heartFloat {
-
     to {
-
         transform:
             translateY(-110vh)
             translateX(100px);
 
         opacity: 0;
+    }
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes titleAppear {
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -948,6 +998,11 @@ body {
 
     .hero-subtitle {
         font-size: 16px;
+    }
+
+    .birthday-image {
+        width: 140px;
+        height: 140px;
     }
 
     .balloon {
@@ -988,6 +1043,7 @@ body {
 
 <section class="hero" id="hero">
 
+
     <!-- Balloons -->
 
     <div class="balloon balloon1"></div>
@@ -1008,15 +1064,27 @@ body {
 
     <div class="hero-content">
 
+
+        <!-- YOUR GITHUB IMAGE -->
+
+        <img
+            src="website.jpg"
+            alt="Birthday Picture"
+            class="birthday-image"
+        >
+
+
         <div class="small-text">
             💌 A LITTLE SURPRISE FOR YOU
         </div>
+
 
         <h1>
             Happy Birthday
             <br>
             <span>Brother! ❤️</span>
         </h1>
+
 
         <p class="hero-subtitle">
             Today is not just another day...
@@ -1035,6 +1103,7 @@ body {
 
         </button>
 
+
     </div>
 
 </section>
@@ -1047,9 +1116,11 @@ body {
 
 <section id="surprise">
 
+
     <h2 class="section-title">
         🎂 Your Birthday Surprise 🎂
     </h2>
+
 
     <p class="section-subtitle">
         First... let's cut the cake! ❤️
@@ -1080,21 +1151,15 @@ body {
             <!-- Candles -->
 
             <div class="candle candle1">
-
                 <div class="flame"></div>
-
             </div>
 
             <div class="candle candle2">
-
                 <div class="flame"></div>
-
             </div>
 
             <div class="candle candle3">
-
                 <div class="flame"></div>
-
             </div>
 
 
@@ -1121,7 +1186,7 @@ body {
     </div>
 
 
-    <!-- Button -->
+    <!-- Cut button -->
 
     <button
         class="action-button"
@@ -1133,6 +1198,7 @@ body {
     </button>
 
 
+
     <!-- =================================
          GIFT
     ================================= -->
@@ -1141,11 +1207,14 @@ body {
         class="gift"
         id="gift">
 
+
         <div class="gift-box">
+
 
             <div class="gift-content">
                 🎁
             </div>
+
 
             <div class="box"></div>
 
@@ -1155,9 +1224,11 @@ body {
 
             <div class="lid"></div>
 
+
         </div>
 
     </div>
+
 
 
     <!-- =================================
@@ -1168,9 +1239,11 @@ body {
         class="message"
         id="message">
 
+
         <h2>
             🎉 Surprise! 🎉
         </h2>
+
 
         <p>
 
@@ -1193,11 +1266,14 @@ body {
 
         </p>
 
+
         <br>
+
 
         <h2>
             🥳 Have an Amazing Day! 🥳
         </h2>
+
 
     </div>
 
@@ -1221,23 +1297,17 @@ function startSurprise() {
         document.getElementById("surprise");
 
 
-    /*
-       Hide hero
-    */
+    /* Hide hero */
 
     hero.style.display = "none";
 
 
-    /*
-       Show surprise
-    */
+    /* Show surprise */
 
     surprise.style.display = "block";
 
 
-    /*
-       Move page to surprise
-    */
+    /* Move page to surprise */
 
     window.scrollTo({
         top: 0,
@@ -1245,11 +1315,10 @@ function startSurprise() {
     });
 
 
-    /*
-       Start floating hearts
-    */
+    /* Start floating hearts */
 
     startHearts();
+
 }
 
 
@@ -1267,9 +1336,7 @@ function cutCake() {
         document.getElementById("cutButton");
 
 
-    /*
-       Change button text
-    */
+    /* Change button text */
 
     button.innerHTML =
         "🔪 Cutting the cake...";
@@ -1278,37 +1345,27 @@ function cutCake() {
     button.disabled = true;
 
 
-    /*
-       Move knife toward cake
-    */
+    /* Move knife toward cake */
 
     knife.classList.add("cutting");
 
 
-    /*
-       After cutting
-    */
+    /* After cutting */
 
     setTimeout(function() {
 
 
-        /*
-           Hide knife
-        */
+        /* Hide knife */
 
         knife.style.display = "none";
 
 
-        /*
-           Change button
-        */
+        /* Hide button */
 
         button.style.display = "none";
 
 
-        /*
-           Show gift
-        */
+        /* Show gift */
 
         const gift =
             document.getElementById("gift");
@@ -1316,18 +1373,14 @@ function cutCake() {
         gift.style.display = "block";
 
 
-        /*
-           Open gift after small delay
-        */
+        /* Open gift */
 
         setTimeout(function() {
 
             gift.classList.add("open");
 
 
-            /*
-               Show birthday message
-            */
+            /* Show birthday message */
 
             setTimeout(function() {
 
@@ -1337,13 +1390,12 @@ function cutCake() {
                 message.style.display = "block";
 
 
-                /*
-                   Celebration
-                */
+                /* Celebration */
 
                 createConfetti();
 
                 createHearts();
+
 
             }, 1000);
 
